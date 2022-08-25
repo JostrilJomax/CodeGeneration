@@ -1,0 +1,16 @@
+{
+    "name": "CodeGeneration.Examples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1d6f9316c2edef2498a151cfaf5560f9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
