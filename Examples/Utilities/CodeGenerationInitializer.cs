@@ -8,6 +8,18 @@ using UnityEngine;
 namespace CodeGeneration.Examples {
 public static class CodeGenerationInitializer {
 
+    [MenuItem("Plugins/Code Generation/Generate Code Blocks")]
+    public static void Run_CodeBlocksGeneration()
+    {
+        string text = CodeBlocksGenerator.Generate();
+        string path = RequestFilePath(
+            "Generated.CodeBlocks",
+            "cs",
+            @"\Plugins\code-generation\Examples\Code Blocks");
+
+        WriteToFile(path, text);
+    }
+
     [MenuItem("Plugins/Code Generation/Generate Color Palette")]
     public static void Run_ColorPaletteGeneration()
     {
@@ -15,13 +27,11 @@ public static class CodeGenerationInitializer {
         string path = RequestFilePath(
             "Generated.ColorPalette",
             "cs",
-            @"/Plugins/CodeGeneration");
-
-        if (string.IsNullOrEmpty(path) || string.IsNullOrEmpty(text))
-            return;
+            @"\Plugins\code-generation\Examples\Colors");
 
         WriteToFile(path, text);
     }
+
 
     [CanBeNull]
     private static string RequestFilePath([NotNull] string fileName, [NotNull] string fileExtension, [NotNull] string defaultRelativePath)
@@ -33,7 +43,7 @@ public static class CodeGenerationInitializer {
             fileExtension);
 
         // If cancelled
-        if (path == null)
+        if (string.IsNullOrEmpty(path))
             return null;
 
         // Making path relative to Unity's root folder
@@ -58,9 +68,11 @@ public static class CodeGenerationInitializer {
         return path;
     }
 
-    private static void WriteToFile([NotNull] string path, [NotNull] string text)
+    private static void WriteToFile([CanBeNull] string path, [CanBeNull] string text)
     {
-        Debug.Log("Started writing to: " + path);
+        if (string.IsNullOrEmpty(path) || string.IsNullOrEmpty(text))
+            return;
+
         File.WriteAllText(path, text);
         AssetDatabase.Refresh();
     }
