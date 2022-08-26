@@ -1,7 +1,7 @@
-﻿using Graffiti.CodeGeneration.Internal.Helpers;
+﻿using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 [PublicAPI]
 public class CodeBuilderConfiguration : CodeBuilderConfiguration.IRules{
 

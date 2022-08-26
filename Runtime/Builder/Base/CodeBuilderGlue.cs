@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 using UnityEditor.UI;
 using UnityEngine;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 public class CodeBuilderGlue {
 
     public readonly  StringBuilder            Sb;

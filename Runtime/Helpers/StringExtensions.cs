@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Graffiti.CodeGeneration.Internal.Helpers {
+namespace CodeGeneration.Internal.Helpers {
 internal static class StringExtensions {
 
     public static string InAngleBrackets(this string self, string content)

@@ -1,7 +1,7 @@
-﻿using Graffiti.CodeGeneration.Internal.Helpers;
+﻿using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 /// <summary> Contains all code member info: access modifiers, class modifiers and so on. </summary>
 [PublicAPI]
 public class MemberInfo {

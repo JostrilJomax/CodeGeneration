@@ -1,9 +1,8 @@
 ﻿using System;
-using Graffiti.CodeGeneration.Internal.Helpers;
+using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
-using UnityEngine;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 /// <summary> This class contains all non-generic shared methods. See <see cref="CodeBuilderBase{T}"/> for more info. </summary>
 [PublicAPI]
 public abstract class CodeBuilderBase {

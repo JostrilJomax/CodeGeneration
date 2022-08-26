@@ -2,7 +2,7 @@
 using System.Text;
 using JetBrains.Annotations;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 [PublicAPI]
 public class CodeBuilder : CodeBuilderBase<CodeBuilder> {
 
@@ -28,7 +28,7 @@ public class CodeBuilder : CodeBuilderBase<CodeBuilder> {
     public CodeBlockModels.ClassBlock     Class     => new CodeBlockModels.ClassBlock(Glue);     /// <inheritdoc cref="Namespace"/>
     public CodeBlockModels.MethodBlock    Method    => new CodeBlockModels.MethodBlock(Glue);    /// <inheritdoc cref="Namespace"/>
     public CodeBlockModels.EnumBlock      Enum      => new CodeBlockModels.EnumBlock(Glue);      /// <inheritdoc cref="Namespace"/>
-    public CodeBlockModels.SwitchBlock Switch => new CodeBlockModels.SwitchBlock(Glue);
+    public CodeBlockModels.SwitchBlock    Switch => new CodeBlockModels.SwitchBlock(Glue);
 
     // ---------------------------------------------------------
     // Attributes & Indexers

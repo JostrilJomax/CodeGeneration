@@ -1,9 +1,8 @@
 ﻿using System;
-using Graffiti.CodeGeneration.Internal.Helpers;
+using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
-using UnityEngine;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 [PublicAPI]
 public abstract class CodeBlockBase<T> : CodeBuilderBase<T> where T : CodeBlockBase<T> {
 

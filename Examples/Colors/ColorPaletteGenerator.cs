@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Graffiti.CodeGeneration;
+using CodeGeneration;
 using UnityEngine;
 
-namespace Graffiti.CodeGeneration.Examples {
+namespace CodeGeneration.Examples {
 public static class ColorPaletteGenerator {
 
     // Some data to the generation method

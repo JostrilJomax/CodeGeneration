@@ -1,8 +1,8 @@
-﻿using Graffiti.CodeGeneration.Internal.Helpers;
+﻿using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 public static class CodeBlockModels {
 
     public class NamespaceBlock : CodeBlockBase<NamespaceBlock> {

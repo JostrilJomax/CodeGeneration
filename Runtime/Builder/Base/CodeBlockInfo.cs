@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 /// <summary>
 ///     Information about code block. Contains <see cref="MemberInfo"/>, <see cref="Name"/> and so on.
 ///     Code block has the following format:

@@ -1,7 +1,7 @@
-﻿using Graffiti.CodeGeneration.Internal.Helpers;
+﻿using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
 
-namespace Graffiti.CodeGeneration {
+namespace CodeGeneration {
 public static class CodeBuilderModels {
 
     public class PropertyBuilder : CodeBuilderBase<PropertyBuilder> {
