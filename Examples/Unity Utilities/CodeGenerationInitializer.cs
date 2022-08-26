@@ -1,9 +1,8 @@
 ﻿using System.IO;
-using System.Net.Mime;
-using System.Threading.Tasks;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
+using Logger = CodeGeneration.Internal.Helpers.Logger;
 
 namespace CodeGeneration.Examples {
 public static class CodeGenerationInitializer {
@@ -61,7 +60,7 @@ public static class CodeGenerationInitializer {
             path = AssetDatabase.GenerateUniqueAssetPath(path);
 
         if (File.Exists(path)) {
-            Debug.LogWarning("Can't create a file: file with same name already exists!");
+            Logger.LogWarning("Can't create a file: file with same name already exists!");
             return null;
         }
 

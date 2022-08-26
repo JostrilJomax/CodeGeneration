@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using CodeGeneration;
-using UnityEngine;
 
 namespace CodeGeneration.Examples {
 public static class ColorPaletteGenerator {

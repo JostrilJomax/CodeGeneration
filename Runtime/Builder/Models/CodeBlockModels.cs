@@ -1,6 +1,5 @@
 ﻿using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
-using UnityEngine;
 
 namespace CodeGeneration {
 public static class CodeBlockModels {
@@ -84,7 +83,7 @@ public static class CodeBlockModels {
         {
             if (i < 0 || i > _params.Length - 1) {
                 // TODO: Handle Error
-                Debug.LogError("!");
+                Logger.LogError("!");
                 return ("", "");
             }
 

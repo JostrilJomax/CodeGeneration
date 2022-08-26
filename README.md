@@ -74,20 +74,20 @@ namespace Generated {
 ### Generator code:
 
 ```csharp
-    // Some data to the generation method
-    private static readonly List<(string name, string trim, string uColor, string hexColor)> ColorFields
-                      = new List<(string name, string trim, string uColor, string hexColor)> {
-        ("White", " ", "new Color(0.93f, 0.93f, 0.93f)", "#eeeeee"),
-        ("Grey", "  ", "new Color(0.67f, 0.67f, 0.67f)", "#aaaaaa"),
-        ("Black", " ", "new Color(0.07f, 0.07f, 0.07f)", "#111111"),
-        ("Red", "   ", "new Color(0.93f, 0.23f, 0.25f)", "#EC3A41"),
-        ("Orange", "", "new Color(0.93f, 0.59f, 0.18f)", "#ED962F"),
-        ("Yellow", "", "new Color(1f,    0.89f, 0.26f)", "#FFE443"),
-        ("Green", " ", "new Color(0.22f,  0.8f,  0.5f)", "#39CD7F"),
-        ("Blue", "  ", "new Color(0.19f, 0.63f, 0.69f)", "#30a0b0"),
-        ("Purple", "", "new Color(0.89f, 0.27f, 0.69f)", "#E245B0"),
-        ("Violet", "", "new Color(0.49f, 0.38f, 0.76f)", "#7d60c3"),
-    };
+// Some data to the generation method
+private static readonly List<(string name, string trim, string uColor, string hexColor)> ColorFields
+                  = new List<(string name, string trim, string uColor, string hexColor)> {
+    ("White", " ", "new Color(0.93f, 0.93f, 0.93f)", "#eeeeee"),
+    ("Grey", "  ", "new Color(0.67f, 0.67f, 0.67f)", "#aaaaaa"),
+    ("Black", " ", "new Color(0.07f, 0.07f, 0.07f)", "#111111"),
+    ("Red", "   ", "new Color(0.93f, 0.23f, 0.25f)", "#EC3A41"),
+    ("Orange", "", "new Color(0.93f, 0.59f, 0.18f)", "#ED962F"),
+    ("Yellow", "", "new Color(1f,    0.89f, 0.26f)", "#FFE443"),
+    ("Green", " ", "new Color(0.22f,  0.8f,  0.5f)", "#39CD7F"),
+    ("Blue", "  ", "new Color(0.19f, 0.63f, 0.69f)", "#30a0b0"),
+    ("Purple", "", "new Color(0.89f, 0.27f, 0.69f)", "#E245B0"),
+    ("Violet", "", "new Color(0.49f, 0.38f, 0.76f)", "#7d60c3"),
+};
 ```
 
 ```csharp

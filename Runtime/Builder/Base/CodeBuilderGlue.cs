@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using JetBrains.Annotations;
-using UnityEditor.UI;
-using UnityEngine;
 
 namespace CodeGeneration {
 public class CodeBuilderGlue {

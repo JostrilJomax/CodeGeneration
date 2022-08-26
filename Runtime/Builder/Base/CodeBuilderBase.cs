@@ -1,5 +1,4 @@
 ﻿using System;
-using CodeGeneration.Internal.Helpers;
 using JetBrains.Annotations;
 
 namespace CodeGeneration {
