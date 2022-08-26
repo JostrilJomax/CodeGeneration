@@ -7,11 +7,11 @@ Because it's difficult to pass data to the T4 templating language, it's easier t
 
 Only a few C# keywords are currently implemented.
 
-For example, there is no ```struct```, or ```for-catch``` block.
+For example, there is no ```struct```, or ```for-catch``` block keywords.
 
 ## Example:
 
-### Side-by-side comparison of generator's code and generated:
+### Side-by-side comparison of the generator code and the generated code:
 
 <table style="width:100%">
 <tr><th style="width: 50%"> Generator code </th> <th> Generated code </th></tr>
@@ -21,7 +21,10 @@ For example, there is no ```struct```, or ```for-catch``` block.
 var b = CodeBuilder.CreateDefaultBuilder();
 ```
 
-<tr><td>
+</td><td></td></tr>
+
+<tr>
+<td>
 
 ```csharp
 b.Namespace.Name("Generated").Body(() => {
