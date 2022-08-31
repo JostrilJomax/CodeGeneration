@@ -1,13 +1,5 @@
 
-## Why?
-
-Because it's difficult to pass data to the T4 templating language, it's easier to create a small library to generate the code.
-
-## Note:
-
-Only a few C# keywords are currently implemented.
-
-For example, there is no ```struct```, or ```for-catch``` block keywords.
+## C# code generation using C# code
 
 ## Example:
 
